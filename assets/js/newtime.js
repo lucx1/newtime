@@ -32,7 +32,7 @@ function cktd() {
 	}
 	newdatecalc = newdatecalc + d.getDate() - 152;
 	if (newdatecalc < 0) {
-		newdatecalc = newdatecalc + 364;
+		newdatecalc = newdatecalc + 365;
 	}
 	var newyear = d.getFullYear();
 	if (d.getMonth() <= 4) {
