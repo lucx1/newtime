@@ -30,12 +30,12 @@ function cktd() {
 	} else if (d.getMonth() == 11) {
 		var newdatecalc = 334;
 	}
-	newdatecalc = newdatecalc + d.getDate() - 151;
+	newdatecalc = newdatecalc + d.getDate() - 152;
 	if (newdatecalc < 0) {
 		newdatecalc = newdatecalc + 364;
 	}
 	var newyear = d.getFullYear();
-	if (d.getMonth() <= 5) {
+	if (d.getMonth() <= 4) {
 		newyear = newyear - 2018;
 	} else {
 		newyear = newyear - 2017;
