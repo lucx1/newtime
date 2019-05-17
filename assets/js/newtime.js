@@ -41,5 +41,5 @@ function cktd() {
 		newyear = newyear - 2017;
 	}
 	var totalms = (newyear - 1)*365 + newdatecalc;
-	document.getElementById("newtimeh1").innerHTML = "<p>Today is "+ newdatecalc +"Ms of year " + newyear + ".<br>In total today is " + totalms + "Ms.<br>Current time is " + newTime[0] + "ks " + newTime[1] + "s.</p>";
+	document.getElementById("newtimeh1").innerHTML = "<p>Today is "+ newdatecalc +"Ms of year " + newyear + ".</p><p>In total today is " + totalms + "Ms.</p><p>Current time is " + newTime[0] + "ks " + newTime[1] + "s.</p>";
 }
