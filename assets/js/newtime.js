@@ -41,5 +41,10 @@ function cktd() {
 		newyear = newyear - 2017;
 	}
 	var totalms = (newyear - 1)*365 + newdatecalc;
-	document.getElementById("newtimeh1").innerHTML = "<p>Today is "+ newdatecalc +"Ms of year " + newyear + ".</p><p>In total today is " + totalms + "Ms.</p><p>Current time is " + newTime[0] + "ks " + newTime[1] + "s.</p>";
+	var totalms = newyear * newdatecalc;
+	var simplehour = parseInt(newtimecalc/100000);
+	var simpleks = parseInt(newtimecalc/1000 - simplehour*100);
+	var simpledas = parseInt(newtimecalc/10 - simpleks*100 - simplehour*10000);
+	document.getElementById("newtimeh1").innerHTML = "<p>Today is "+ newdatecalc +"Ms of year " + newyear + ".</p><p>In total today is " + totalms + "Ms.</p><p>Current time is " + newTime[0] + "ks " + newTime[1] + "s.</p><p>Simplified time is " + simplehour + ":" + simpleks + ":" + simpledas + ".</p>";
+
 }
