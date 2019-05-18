@@ -62,7 +62,7 @@ function writep(newyear,newdatecalc,totalms,newTime,simplehour,simpleks,simpleda
 		languagestring[1] = "전체로 오늘은 " + totalms + "Ms입니다.";
 		languagestring[2] = "지금 시간은 " + newTime[0] + "ks " + newTime[1] + "s입니다.";
 		languagestring[3] = "쉽게 한 시간은 " + simplehour + ":" + simpleks + ":" + simpledas + "'" + simples + "입니다.";
-		languagestring[4] = "밑 버턴 클릭하여 언어 설정하세요."
+		languagestring[4] = "밑 버튼 클릭하여 언어 설정하세요."
 	} else if (setlanguage.includes("de") == true) {
 		languagestring[0] = "Heute ist " + newdatecalc + "Ms Jahr " + newdatecalc + ".";
 		languagestring[1] = "Insgesamt ist heute " + totalms + "Ms.";
