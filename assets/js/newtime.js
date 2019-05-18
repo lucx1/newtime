@@ -66,13 +66,13 @@ function writep(newyear,newdatecalc,totalms,newTime,simplehour,simpleks,simpleda
 	} else if (setlanguage.includes("de") == true) {
 		languagestring[0] = "Heute ist " + newdatecalc + "Ms Jahr " + newdatecalc + ".";
 		languagestring[1] = "Insgesamt ist heute " + totalms + "Ms.";
-		languagestring[2] = "Es ist " + newTime[0] + "ks " + newTime[1] + " Uhr.";
+		languagestring[2] = "Es ist " + newTime[0] + "ks " + newTime[1] + "s Uhr.";
 		languagestring[3] = "Vereinfacht ist es " + simplehour + ":" + simpleks + ":" + simpledas + "'" + simples + " Uhr.";
 		languagestring[4] = "Klicke unten eine Sprache an, um sie einzustellen."
 	} else {
 		languagestring[0] = "Today is " + newdatecalc + "Ms of year " + newdatecalc + ".";
 		languagestring[1] = "In total today is " + totalms + "Ms.";
-		languagestring[2] = "Current time is " + newTime[0] + "ks " + newTime[1] + ".";
+		languagestring[2] = "Current time is " + newTime[0] + "ks " + newTime[1] + "s.";
 		languagestring[3] = "Simplified time is " + simplehour + ":" + simpleks + ":" + simpledas + "'" + simples + ".";
 		languagestring[4] = "Click a language below to change."
 	}
