@@ -1,4 +1,5 @@
 window.setInterval(cktd, 1);
+var setlanguage = navigator.language;
 function cktd() {
 	var d = new Date();
 	var newTime = new Array();
@@ -52,22 +53,38 @@ function cktd() {
 	if (simpledas < 10) {
 		simpledas = "0" + simpledas;
 	}
+	writep(newyear,newdatecalc,totalms,newTime,simplehour,simpleks,simpledas,simples);
+}
+function writep(newyear,newdatecalc,totalms,newTime,simplehour,simpleks,simpledas,simples) {
 	var languagestring = new Array();
-	if (navigator.language.includes("ko") == true) {
+	if (setlanguage.includes("ko") == true) {
 		languagestring[0] = "오늘은 " + newyear + "년 " + newdatecalc + "Ms입니다.";
 		languagestring[1] = "전체로 오늘은 " + totalms + "Ms입니다.";
 		languagestring[2] = "지금 시간은 " + newTime[0] + "ks " + newTime[1] + "s입니다.";
 		languagestring[3] = "쉽게 한 시간은 " + simplehour + ":" + simpleks + ":" + simpledas + "'" + simples + "입니다.";
-	} else if (navigator.language.includes("de") == true) {
+		languagestring[4] = "밑 버턴 클릭하여 언어 설정하세요."
+	} else if (setlanguage.includes("de") == true) {
 		languagestring[0] = "Heute ist " + newdatecalc + "Ms Jahr " + newdatecalc + ".";
 		languagestring[1] = "Insgesamt ist heute " + totalms + "Ms.";
 		languagestring[2] = "Es ist " + newTime[0] + "ks " + newTime[1] + " Uhr.";
 		languagestring[3] = "Vereinfacht ist es " + simplehour + ":" + simpleks + ":" + simpledas + "'" + simples + " Uhr.";
+		languagestring[4] = "Klicke unten eine Sprache an, um sie einzustellen."
 	} else {
 		languagestring[0] = "Today is " + newdatecalc + "Ms of year " + newdatecalc + ".";
 		languagestring[1] = "In total today is " + totalms + "Ms.";
 		languagestring[2] = "Current time is " + newTime[0] + "ks " + newTime[1] + ".";
 		languagestring[3] = "Simplified time is " + simplehour + ":" + simpleks + ":" + simpledas + "'" + simples + ".";
+		languagestring[4] = "Click a language below to change."
 	}
 	document.getElementById("newtimeh1").innerHTML = "<p>" + languagestring[0] + "</p><p>" + languagestring[1] + "</p><p>" + languagestring[2] + "</p><p>" + languagestring[3] + "</p>";
+	document.getElementById("languageselect").innerHTML = languagestring[4];
+}
+function seten() {
+	setlanguage = "en-US";
+}
+function setko() {
+	setlanguage = "ko-KR";
+}
+function setde() {
+	setlanguage = "de-DE";
 }
