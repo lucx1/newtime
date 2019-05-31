@@ -42,7 +42,6 @@ function cktd() {
 		newyear = newyear - 2017;
 	}
 	var totalms = (newyear - 1)*365 + newdatecalc;
-	var totalms = newyear * newdatecalc;
 	var simplehour = parseInt(newtimecalc/100000);
 	var simpleks = parseInt(newtimecalc/1000 - simplehour*100);
 	var simpledas = parseInt(newtimecalc/10 - simpleks*100 - simplehour*10000);
