@@ -96,16 +96,21 @@ function convertToTwelve(x) {
 }
 function writep(twelveyear,twelvedayofyear,twelveday,twelvehour,twelvemin,twelvesec) {
 	var languagestring = new Array();
-	if (setlanguage.includes("ko") == true) {
+	if (setlanguage.includes("ko")) {
 		languagestring[0] = "오늘은 " + twelveyear + "년 " + twelvedayofyear + "일입니다.";
 		languagestring[1] = "전체로 오늘은 " + twelveday + "일입니다.";
 		languagestring[2] = "지금 시간은 " + twelvehour + ":" + twelvemin + ":" + twelvesec + "입니다.";
 		languagestring[3] = "밑 버튼 클릭하여 언어 설정하세요."
-	} else if (setlanguage.includes("de") == true) {
+	} else if (setlanguage.includes("de")) {
 		languagestring[0] = "Heute ist Tag " + twelvedayofyear + " im Jahr " + twelveyear + ".";
 		languagestring[1] = "Insgesamt ist heute Tag " + twelveday + ".";
 		languagestring[2] = "Es ist " + twelvehour + ":" + twelvemin + ":" + twelvesec + " Uhr.";
 		languagestring[3] = "Klicke unten eine Sprache an, um sie einzustellen."
+	} else if (setlanguage.includes("kalestia")) {
+		languagestring[0] = "Mujun ase " + twelveyear + "'m nelieli " + twelvedayofyear + "'m jun.";
+		languagestring[1] = "Onraonem ase " + twelveday + "'m jun.";
+		languagestring[2] = "Nim lezia ase " + twelvehour + ":" + twelvemin + ":" + twelvesec + ".";
+		languagestring[3] = "Feze jileaen met moklolan mejuenem."
 	} else {
 		languagestring[0] = "Today is day " + twelvedayofyear + " of year " + twelveyear + ".";
 		languagestring[1] = "In total today is day " + twelveday + ".";
@@ -123,4 +128,7 @@ function setko() {
 }
 function setde() {
 	setlanguage = "de-DE";
+}
+function setkalestia() {
+	setlanguage = "kalestia";
 }
