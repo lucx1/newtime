@@ -108,7 +108,7 @@ function writep(twelveyear,twelvedayofyear,twelveday,twelvehour,twelvemin,twelve
 		languagestring[3] = "Klicke unten eine Sprache an, um sie einzustellen."
 	} else if (setlanguage.includes("kalestia")) {
 		languagestring[0] = "Mujun ase " + twelveyear + "'m nelieli " + twelvedayofyear + "'m jun.";
-		languagestring[1] = "Onraonem ase " + twelveday + "'m jun.";
+		languagestring[1] = "Onraonem mujun ase " + twelveday + "'m jun.";
 		languagestring[2] = "Nim lezia ase " + twelvehour + ":" + twelvemin + ":" + twelvesec + ".";
 		languagestring[3] = "Feze jileaen met moklolan mejuenem."
 	} else {
