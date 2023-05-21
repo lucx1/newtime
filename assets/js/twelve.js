@@ -110,7 +110,7 @@ function writep(twelveyear,twelvedayofyear,twelveday,twelvehour,twelvemin,twelve
 		languagestring[0] = "Mujun ase " + twelveyear + "'m nelieli " + twelvedayofyear + "'m jun.";
 		languagestring[1] = "Onraonem mujun ase " + twelveday + "'m jun.";
 		languagestring[2] = "Nim lezia ase " + twelvehour + ":" + twelvemin + ":" + twelvesec + ".";
-		languagestring[3] = "Feze jileaen met moklolan mejuenem."
+		languagestring[3] = "Feze jileaen met moklolan mejusunem."
 	} else {
 		languagestring[0] = "Today is day " + twelvedayofyear + " of year " + twelveyear + ".";
 		languagestring[1] = "In total today is day " + twelveday + ".";
